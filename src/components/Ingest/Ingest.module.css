@@ -1,0 +1,59 @@
+.ingestPage {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.ingestCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 40px 36px;
+  min-width: 340px;
+  max-width: 400px;
+  text-align: center;
+  border: 1.5px solid #e3e3e3;
+}
+.ingestIcon {
+  font-size: 44px;
+  margin-bottom: 12px;
+  color: #17624a;
+}
+.ingestTitle {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: #232946;
+  font-size: 26px;
+}
+.ingestDesc {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.ingestButton {
+  padding: 14px 36px;
+  font-size: 17px;
+  border-radius: 8px;
+  background: #17624a;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(23,98,74,0.08);
+  transition: background 0.18s;
+}
+.ingestButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.ingestResult {
+  margin-top: 24px;
+  font-weight: 600;
+}
+.ingestResult.success {
+  color: #17624a;
+}
+.ingestResult.error {
+  color: #d32f2f;
+}
