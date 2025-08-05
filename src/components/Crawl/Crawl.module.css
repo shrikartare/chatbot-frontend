@@ -1,0 +1,68 @@
+.crawlInput {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1.5px solid #e3e3e3;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.crawlPage {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.crawlCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 40px 36px;
+  min-width: 340px;
+  max-width: 400px;
+  text-align: center;
+  border: 1.5px solid #e3e3e3;
+}
+.crawlIcon {
+  font-size: 44px;
+  margin-bottom: 12px;
+  color: #1976d2;
+}
+.crawlTitle {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  color: #232946;
+  font-size: 26px;
+}
+.crawlDesc {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.crawlButton {
+  padding: 14px 36px;
+  font-size: 17px;
+  border-radius: 8px;
+  background: #1976d2;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.08);
+  transition: background 0.18s;
+}
+.crawlButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.crawlResult {
+  margin-top: 24px;
+  font-weight: 600;
+}
+.crawlResult.success {
+  color: #1976d2;
+}
+.crawlResult.error {
+  color: #d32f2f;
+}
