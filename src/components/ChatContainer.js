@@ -83,8 +83,8 @@ const ChatContainer = () => {
               <div
                 key={index}
                 className={message?.role === "user" ? styles.userMessage : ""}
+                dangerouslySetInnerHTML={message?.content}
               >
-                {message?.content}
               </div>
             );
           })}
