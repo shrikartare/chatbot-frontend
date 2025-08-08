@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styles from "./ChatContainer.module.css";
 import ChatInput from "./ChatInput/ChatInput";
 import { LOCALES } from "../constants/locales";
+import { API_BASE_URL } from "../apiConfig";
 
 const ChatContainer = () => {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ const ChatContainer = () => {
     setInput("");
     setIsLoading(true);
     try {
-      const response = await fetch(`http://localhost:8000/${locale}/chat`, {
+      const response = await fetch(`${API_BASE_URL}/${locale}/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -84,8 +85,7 @@ const ChatContainer = () => {
                 key={index}
                 className={message?.role === "user" ? styles.userMessage : ""}
                 dangerouslySetInnerHTML={message?.content}
-              >
-              </div>
+              ></div>
             );
           })}
         </div>
