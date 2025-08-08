@@ -41,7 +41,7 @@ const ChatContainer = () => {
           { content: results.answer, role: "assistant" },
         ]);
       }
-     setInput("");
+      setInput("");
     } catch (error) {
       console.log("error", error);
     } finally {
